@@ -1,0 +1,47 @@
+1. 
+Making Coffee
+
+FUNCTION makingCoffee()
+      PUT Coffee filter in the filter basket
+      PUT  Coffee ground and mug
+      POUR Water  
+      PRESS button and wait
+      
+  END FUNCTION
+**********************************
+WASHING DISHES
+
+         FUNCTION washingDishes()
+         	PUT  dishwasher soap in dishwasher
+        	FOR EACH dirty dish on counter 
+          		Scrape rest of food into garbage
+        	END FOR 
+        	WHILE there is dirty dishes on counter
+          		Place dirty dishes in the dishwasher 
+        	END WHILE
+          	TURN on dishwasher
+       	IF dishwasher finished
+           	Remove plates and put in cupboards
+        	END IF     
+        END FUNCTION
+
+Making Tea bag
+
+	FUNCTION makingTeaBag()
+	     PUT Tea Bag into mug
+	     POUR hot water
+	     WAIT for 3-5 minutes
+	     REMOVE Tea Bag
+	     ENJOY
+	END FUNCTION
+
+2. Name three companies who created an algorithm that made them successful
+
+- Apple: they apply algorithm to create Siri, personal assistant. Its highly complex algorithm can organize through an innumerable amount of data to give you the information you need in a matter of seconds
+- Google: Google Maps is one of the most important things we need today. An algorithm is able to go through billions of photos collected by a Google street view car and extract relevant information such as street names, shops, and house addresses.
+- Netflix: The video streaming giants over at Netflix have developed a personalization algorithm that perfectly blends what you want to watch and new suggestions that will turn into one of your favorites.
+
+3. Hypothesize about what constitutes an efficient algorithm versus an inefficient algorithm
+
+The analysis of an algorithm to determinate efficiency is based on time( how long does the algorithm take to complete) and space( how much memory does the algorithm use). This analysis can be done using the Big O notation. Efficient algorithms are also easy to understand and not redundant.
+
