@@ -10,10 +10,10 @@
 - Factorial
 
 3. When should you use recursion, and when should you avoid recursion? Give examples for each.
-An algorithm that deals with results starting with known cases, such as factorials are a perfect use of recursion. Algorithms that pass over a collection of data works better with an iterative solution, for example finding the maximum.  Recursion has a tendency to repeat calculations what may introduce a performance issue.
+- An algorithm that deals with results starting with known cases, such as factorials are a perfect use of recursion. Algorithms that pass over a collection of data works better with an iterative solution, for example finding the maximum.  Recursion has a tendency to repeat calculations what may introduce a performance issue.
 
 4. Compare the recursive and iterative solutions to the three algorithms from the checkpoint (factorial, maximum, and fibonacci). What is similar, and what is different?
-For similarities, both procedures lead to the correct solution.  For differences, the iterative solutions look cleaner and simpler when used to run through data while  recursion looks simpler when calculating factorials.
+- For similarities, both procedures lead to the correct solution.  For differences, the iterative solutions look cleaner and simpler when used to run through data while  recursion looks simpler when calculating factorials.
 
 5. Given a multi-dimensional collection (such as an array) where the number of dimensions is unknown, write a recursive algorithm to count the number of items in the entire collection.
 
@@ -27,6 +27,7 @@ if (array.length <= 0 ) {
 };
 
 6. A palindrome is a word or phrase whose spelling is the same either direction (e.g., racecar). Write a recursive algorithm to determine if a given word or phrase is a palindrome.
+
 function palindrome(str) {
   let strLength = str.length;
   console.log(strLength)
@@ -42,4 +43,4 @@ function palindrome(str) {
 palindrome('racecar')
 
 7. Google Easter Egg: Google the term "recursion". Google will prompt you with "Did you mean: recursion". Explain why this behavior exhibits properties of recursion.
-Recursion is simply a function that calls itself. Recursion (which is related to the word ÔrecurÕ) is kind of like when you hold two mirrors side-by-side facing each other - they form an infinite visual field of reflections! ItÕs a Google Easter Egg from a computer science joke: "To understand recursion, you must first understand recursion."
+- Recursion is simply a function that calls itself. Recursion (which is related to the word ÔrecurÕ) is kind of like when you hold two mirrors side-by-side facing each other - they form an infinite visual field of reflections! ItÕs a Google Easter Egg from a computer science joke: "To understand recursion, you must first understand recursion."
