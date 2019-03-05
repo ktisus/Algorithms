@@ -17,14 +17,16 @@
 
 5. Given a multi-dimensional collection (such as an array) where the number of dimensions is unknown, write a recursive algorithm to count the number of items in the entire collection.
 
-function countArray(array) {
-let count = array.length;
-console.log(count);
-if (array.length <= 0 ) {
-  return 0;
-  }
-  return countArray;
-};
+function countDeepArray(array){
+  var counter = 0;
+  for(var i=0; i<array.length; i++){
+    if(typeof array[i] === "object"){
+      counter += countDeepArray(array[i]);
+    } else {
+      counter++;
+    }
+  } return counter;
+}
 
 6. A palindrome is a word or phrase whose spelling is the same either direction (e.g., racecar). Write a recursive algorithm to determine if a given word or phrase is a palindrome.
 
@@ -34,7 +36,7 @@ function palindrome(str) {
   if (strLength === 0 || strLength === 1) {
     return true;
   }
-  if (word [0] === word[strLength - 1]) {
+  if (str [0] === str[strLength - 1]) {
     return palindrome(str.slice(1, str.length - 1));
   }
   return false;
