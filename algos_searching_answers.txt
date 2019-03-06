@@ -20,23 +20,28 @@
 PROGRAMMING ASSIGNMENT
 1. You and a friend have set a wager to see who can find the word "Albatross" in the dictionary the fastest. Write a program to allow you to win the bet.
 
-function findWord(arr,word){
-  let high = arr.length-1;
-  let low = 0;
-  let mid =0 ;
+function findWord(arr, word){ 
+  var low = arr[0];
+  var high = arr[arr.length -1];
 
-  while( low <= high){
-  mid= Math.floor((high+low)/2)
-   if (arr[mid]== word){
-     return arr[mid];
-   }else if(word >arr[mid]){
-       low = mid +1;        
-   }else{
-     hight = mid - 1;
-   }
+  while (low <= high) {
+    var mid = (arr.indexOf(low) + arr.indexOf(high)) / 2;
+    mid = Math.round(mid);
+    
+    if(arr[mid] > word) { 
+      high = arr[mid -1];
+    } 
+    else if (arr[mid] < word) {
+      low = arr[mid + 1];
+    }
+    else {
+      return arr[mid];
+    }
   }
-  return 'Cannot be found';
+  return "Cannot be found";
 }
+
+console.log(findWord(["a","b", "c", "d", "e"], "d"));
 
 2. You work at a pet store, and a child has asked you to net the only white-spotted goldfish from the fish tank. Write a program that will help you net the right fish
 
