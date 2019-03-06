@@ -35,7 +35,8 @@ function findWord(arr,word){
      hight = mid - 1;
    }
   }
-  return ‘This word cannot be found’;
+  return 'Cannot be found';
+}
 
 2. You work at a pet store, and a child has asked you to net the only white-spotted goldfish from the fish tank. Write a program that will help you net the right fish
 
