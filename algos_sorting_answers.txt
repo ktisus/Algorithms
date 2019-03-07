@@ -17,27 +17,27 @@ END FUNCTION
 
 2. Write pseudocode for quicksort.
 
-function partitionFunc(left, right, pivot)
-   leftPointer = left
-   rightPointer = right - 1
+FUNCTION quickSort(A)
+  IF A less or equal to 1 
+    RETURN A
+  END IF
 
-   while True do
-      while A[++leftPointer] < pivot do
-         //do-nothing            
-      end while
-		
-      while rightPointer > 0 && A[--rightPointer] > pivot do
-         //do-nothing         
-      end while	
-      if leftPointer >= rightPointer
-         break
-      else                
-         swap leftPointer,rightPointer
-      end if
-   end while 
-   swap leftPointer,right
-   return leftPointer
-end function
+  SET pivot to A.length-1 
+  SET left to empty array
+  SET right to empty array 
+
+  FOR each index in A
+   IF A[i] is greater than the pivot 
+     PUSH A[i] to right array
+   ELSE 
+      PUSH A[i] to left array
+   END IF 
+  END FOR
+    REPEAT quickSort function to the right array from pivot
+    REPEAT quickSort function to the left array from pivot
+    CONCAT both 
+END FUNCTION
+
 
 3. We talked about time complexity in a previous checkpoint, and how to get an idea of the efficiency of an algorithm. After looking at the pseudocode for the above sorting methods, identify why merge sort and quick sort are much more efficient than the others. Walking through each algorithm with a few sample collections may help.
 - Both merge sort and quick sort  use ‘Divide and conquer’ principles. In other words, those algorithms split up larger collections into smaller ones and ultimately bring them all back together after the sorting is completed.  
